@@ -1,0 +1,48 @@
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{float costo, peso, pago;
+ 
+    cout<<"Ingrese el peso en gramos de una carta, ";
+    cin>>peso;
+
+ if (peso<50)
+  {costo=1.5;
+   cout<<"El costo es:%d",costo;
+  }
+  else
+   {
+     if (peso<=100)
+     { costo=4;
+     cout<<"El costo es:%d",costo;
+     }
+     else 
+      { if (peso<=200)
+            { costo=6;
+         cout<<"El costo es:%d",costo;
+       }
+         else 
+         {if (peso<=350)
+             { costo=10.5;
+              cout<<"El costo es:%d,costo",costo;
+             }
+             else
+
+             {if (peso<=500)
+                 {     costo=15;
+                  cout<<"El costo es:%d",costo;
+                 }
+                 else
+                 {cout<<"NO PUEDE ENVIAR COMO CARTA";
+                 }     
+              }    
+           } 
+        }
+     }
+
+ getch();
+     return 0;
+}
